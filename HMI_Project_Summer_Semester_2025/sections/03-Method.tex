@@ -1,0 +1,98 @@
+\section{\textbf{Methodology}}
+
+\subsection {\textbf {Study Design}}
+This study employed a quantitative within-subjects experimental design to investigate the effects of four structured assistance conditions on prompt revision behaviors in LLM interactions. Each participant completed tasks across three domains (creative writing, data analysis, and educational content generation) under all four assistance conditions, presented in randomized order to control for sequence effects. The design generated 396 total observations (33 participants $\times$ 3 domains $\times$ 4 conditions) and enabled direct comparison of assistance conditions while controlling for individual differences in prompt construction abilities.
+
+\subsection{\textbf{Hypothesis}}
+This research question "How does the effectiveness of structured assistance for prompt revision vary across different task domains in LLM-assisted tasks?" is decomposed into several specific hypotheses:
+\begin{enumerate}
+    \item H1: Usage frequency of assistance conditions positively predicts helpfulness evaluation.
+    \item H2: Perceived usefulness positively predicts helpfulness evaluation across all assistance conditions.
+    \item H3: Example-based assistance will yield higher effectiveness ratings than template-based assistance for creative tasks.
+    \item H4: Feedback-based assistance will show superior performance for educational content generation compared to other assistance.
+\end{enumerate}
+
+
+\subsection{\textbf{Independent Variables/Factors}}
+The primary independent variable was the type of structured assistance for prompt revision provided to participants, operationalized through four distinct conditions:
+
+\begin{itemize}
+    \item \textbf{Template-based:} Participants received a structured framework with predefined placeholders (such as genre, characters, setting, and task elements). They filled in these placeholders to form their prompts, ensuring coverage of essential details.
+    
+    \item \textbf{Example-based:} Participants were shown good and bad prompt examples tailored to the task domain. These highlighted what makes prompts effective, serving as references for participants to create their own prompts.
+    
+    \item \textbf{Feedback-based:} Participants drafted an initial prompt and then received feedback with suggestions for improvement (such as clarifying the audience, specifying the twist, and improving detail). They revised their prompts based on this feedback.
+    
+    \item \textbf{Control-based:} Participants created prompts independently without structured assistance.
+\end{itemize}
+
+Task domain varied across three categories selected to represent common LLM applications with different cognitive demands:
+
+\begin{itemize}
+    \item \textbf{Creative writing:} Participants generated short narrative texts (e.g., stories with specified genres, characters, and twists).
+    
+    \item \textbf{Data analysis:} Participants analyzed structured datasets to identify patterns, trends, or recommendations.
+    
+    \item \textbf{Educational content generation:} Participants created explanatory or instructional materials aimed at a student audience.
+\end{itemize}
+
+\subsection{\textbf{Dependent Variables}}
+The dependent variables were the measured outcomes reflecting how assistance conditions influenced prompt revisions and user experiences. These were operationalized as follows:
+
+\begin{itemize}
+    \item \textbf{Effectiveness:} Participants' subjective evaluations of how effective each assistance condition was in helping them complete the task, measured on a 5-point Likert scale (such as ``not effective at all'' to ``very effective'').
+    
+    \item \textbf{Revision frequency:} The number of times participants revised or edited their prompts before finalizing them (quantitative count of revisions).
+    
+    \item \textbf{Time taken:} The duration participants required to complete each task under each assistance strategy, providing an additional performance metric.
+\end{itemize}
+
+\subsection{\textbf{Apparatus}}
+Our study utilized a combination of hardware and software tools to conduct the survey, collecting data, and analyzing results.
+\begin{itemize}
+    \item \textbf{Hardware:} Participants completed the tasks using our computers/laptops/ipads with reliable internet access. Devices varied across operating systems and browsers.
+
+    \item \textbf{Survey Platform:} The study was hosted on SoSci Survey, which enabled presentation of tasks across four assistance conditions: Template-based, Example-based, Feedback-based, and Control. The order of conditions was randomized for each participant to mitigate sequence effects.
+    
+    \item \textbf{LLM Integration:} We employed OpenAI’s ChatGPT (GPT-5) as the Large Language Model to simulate prompt revision outcomes. This ensured consistency and comparability of LLM-assisted outputs across the three task domains.
+    
+    \item \textbf{Data Analysis Tools:} Responses were exported from SoSci Survey in spreadsheet format and processed using Google Colab for data cleaning, statistical analysis, and visualization.
+
+    \item \textbf{Interview Recording Equipment:} For participants who revised prompts multiple times, the device’s default screen recording tool was used during task completion to capture the revision process and ensure accurate data for subsequent analysis.
+    
+\end{itemize}
+
+
+\subsection{\textbf{Stimuli and Conditions}}
+
+\subsubsection{\textbf{Stimuli}}
+
+The stimuli consisted of task instructions, assistance materials, and evaluation questionnaires.
+
+\textbf{Task Instructions:} Each task was presented in a short written description. The creative writing task asked participants to construct a prompt that would generate a fictional story with a clear twist ending. The data analysis task asked participants to create a prompt that would lead the LLM to analyze and summarize patterns. The educational content task required participants to prompt the LLM to explain a concept in simple terms for learners. These tasks were intentionally diverse in style and domain in order to observe how assistance conditions generalized across contexts.
+
+\textbf{Assistance Materials:} To implement the experimental manipulation, participants were provided with condition-specific guidance alongside the task instructions. In the template condition, they received a structured framework outlining key prompt components; in the example condition, they were shown annotated sample prompts that illustrated effective design; and in the feedback condition, they were given checklists that encouraged reflection and refinement of their initial drafts. In the control condition, no additional support was provided beyond the task description. To ensure that all participants were familiar with the study workflow, a video tutorial was also provided, explaining the overall procedure and demonstrating how to interact with the experimental interface. All materials were deliberately matched in length and complexity but differed systematically in their mode of support, thereby isolating the type of assistance as the critical variable.
+
+\textbf{Evaluation Questionnaires:} After completing each task under each condition, participants filled in a structured questionnaire that included Likert scale items on the effectiveness of the assistance and their satisfaction with the final output.
+
+\subsubsection{\textbf{Conditions}}
+
+The independent variable was the type of assistance, implemented across four within-subject conditions: template-based, where participants filled in a structured framework with predefined sections (such as context, task instruction, and output requirements); example-based, where they were shown annotated sample prompts illustrating effective and ineffective designs; feedback-based, where they received targeted suggestions for improvement on their drafts (such as specificity, clarity, or missing details); and control, where they constructed prompts independently without structured guidance.
+
+\subsection{\textbf{Measures}}
+
+This study focuses exclusively on quantitative measures to capture objective and self-reported outcomes of prompt revision.
+
+\textbf{Revision Frequency:} The number of prompt edits made by participants in each task under each condition. This measure served as an indicator of how much effort was required to refine prompts with different assistance conditions.
+
+\textbf{Effectiveness of Assistance Conditions:} After completing each task in each condition, participants rated the usefulness of the assistance on a 5-point Likert scale ranging from ``Not effective at all'' to ``Extremely effective.'' This provided a subjective measure of the perceived value of each strategy.
+
+\textbf{Task Completion Time:} While not a primary variable, task completion time was logged automatically. This provided supplementary evidence on whether certain assistance conditions enabled faster or slower completion.
+
+\subsection{\textbf{Survey Procedure}}
+
+The study was conducted on-site using a controlled experimental interface integrated with ChatGPT. After providing informed consent, participants first completed a short demographic questionnaire capturing age, gender, education, nationality, and prior experience with AI tools, along with self-ratings of digital literacy and comfort with technology on 5-point Likert scales. They were then introduced to the task flow and proceeded to complete three tasks (creative writing, data analysis, and educational content generation), each under all four assistance conditions (template, example, feedback, and control) presented in randomized order. For every condition, participants read the task description, constructed an initial prompt, iteratively revised it with the assistance provided, submitted a finalized prompt to obtain the LLM-generated output, and finally completed a structured post-task questionnaire evaluating the perceived effectiveness of the assistance.
+
+\subsection{\textbf{Participants}}
+
+A total of 33 participants were recruited via university mailing lists, online platforms, and social media channels. Participation in the study was voluntary, and no personally identifying information was retained beyond basic details such as names and email addresses, which were collected solely for the purpose of issuing participation certificates. All participants provided informed consent prior to beginning the study. The research protocol is in accordance with the ethical guidelines of our institution, ensuring compliance with established standards for ethical research conduct.
