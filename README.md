@@ -92,9 +92,6 @@ For questions about this study or to access additional data, please contact:
 - **Email**: m.onirban@stud.fra-uas.de
 - **Institution**: Frankfurt Applied Sciences
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🔄 Contributing
 
